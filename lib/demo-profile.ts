@@ -1,0 +1,33 @@
+import { BusinessProfile } from "@/lib/types";
+
+export const demoProfile: BusinessProfile = {
+  businessName: "Atlas Fabrication LLC",
+  state: "California",
+  county: "County",
+  city: "City",
+  tribalAffiliation: "",
+  ruralUrban: "urban",
+  industry: "Manufacturing",
+  naicsCode: "332710",
+  entityType: "LLC",
+  yearsInBusiness: 3,
+  annualRevenue: 380000,
+  monthlyRevenue: 32000,
+  creditScoreRange: "640-699",
+  fundingAmountNeeded: 250000,
+  useOfFunds: "equipment and working capital",
+  collateralAvailable: true,
+  employees: 7,
+  ownership: {
+    womanOwned: true,
+    minorityOwned: true,
+    veteranOwned: false,
+    disabledOwned: false,
+    nonprofit: false,
+  },
+  startupOrExisting: "existing",
+  existingDebt: true,
+  taxComplianceStatus: "compliant",
+  bankStatementsAvailable: true,
+  businessPlanAvailable: true,
+};
