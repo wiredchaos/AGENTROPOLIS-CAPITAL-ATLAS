@@ -8,8 +8,6 @@
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
 }
 
 * {
@@ -21,5 +19,5 @@ body {
   background: radial-gradient(circle at 80% 0%, rgba(6, 182, 212, 0.13), transparent 35%),
     radial-gradient(circle at 10% 10%, rgba(239, 68, 68, 0.12), transparent 25%), #050608;
   color: var(--foreground);
-  font-family: var(--font-geist-sans), Arial, sans-serif;
+  font-family: Inter, Arial, sans-serif;
 }
