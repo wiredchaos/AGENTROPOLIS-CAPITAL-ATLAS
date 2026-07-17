@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Capital Atlas by AGENTROPOLIS maps business funding opportunities by jurisdiction." />
+  <title>Capital Atlas by AGENTROPOLIS</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="grid"></div>
+  <header class="nav shell">
+    <a class="brand" href="#top">CAPITAL ATLAS <span>by AGENTROPOLIS</span></a>
+    <nav>
+      <a href="#jurisdictions">Jurisdictions</a>
+      <a href="#programs">Programs</a>
+      <a href="#scan">Capital Scan</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero shell">
+      <div class="hero-copy">
+        <p class="eyebrow">CAPITAL INTELLIGENCE GRID // ONLINE</p>
+        <h1>EVERY JURISDICTION.<br /><strong>EVERY OPPORTUNITY.</strong></h1>
+        <p class="lede">AI-powered capital navigation across federal, state, county, city, tribal, rural, and special-district layers.</p>
+        <div class="actions">
+          <a class="button primary" href="#scan">Start Capital Scan</a>
+          <a class="button ghost" href="#programs">Explore California Programs</a>
+        </div>
+      </div>
+      <div class="atlas" aria-label="Animated jurisdiction atlas">
+        <div class="orbit orbit-one"></div>
+        <div class="orbit orbit-two"></div>
+        <div class="core">CA</div>
+        <span class="node n1">FEDERAL</span><span class="node n2">STATE</span>
+        <span class="node n3">COUNTY</span><span class="node n4">CITY</span>
+        <span class="node n5">TRIBAL</span><span class="node n6">RURAL</span>
+      </div>
+    </section>
+
+    <section id="jurisdictions" class="section shell">
+      <p class="eyebrow">JURISDICTION STACK</p>
+      <h2>Capital is fragmented. Capital Atlas maps the layers.</h2>
+      <div class="cards" id="jurisdictionCards"></div>
+    </section>
+
+    <section id="programs" class="section shell panel">
+      <div class="section-head">
+        <div><p class="eyebrow">CALIFORNIA LAUNCH MODULE</p><h2>Starter opportunity index</h2></div>
+        <input id="programSearch" type="search" placeholder="Search SSBCI, SBA, CDFI..." />
+      </div>
+      <div id="programList" class="program-list"></div>
+    </section>
+
+    <section id="scan" class="section shell scan-grid">
+      <div>
+        <p class="eyebrow">CAPITAL SCAN // MVP</p>
+        <h2>Generate a jurisdiction-aware capital route.</h2>
+        <p class="muted">This first public build produces a transparent starter match from local seed data. It does not guarantee approval.</p>
+      </div>
+      <form id="capitalForm" class="scan-form">
+        <label>Business stage<select name="stage"><option>Startup</option><option>Existing business</option></select></label>
+        <label>Location type<select name="location"><option>Urban</option><option>Rural</option><option>Tribal jurisdiction</option></select></label>
+        <label>Capital needed<select name="amount"><option>Under $50,000</option><option>$50,000–$250,000</option><option>$250,000–$5 million</option></select></label>
+        <label>Use of funds<select name="use"><option>Working capital</option><option>Equipment</option><option>Real estate</option><option>Technology and growth</option></select></label>
+        <button class="button primary" type="submit">Run Capital Scan</button>
+      </form>
+      <div id="scanResult" class="result" hidden></div>
+    </section>
+  </main>
+
+  <footer class="shell footer">
+    <strong>Capital Atlas by AGENTROPOLIS</strong>
+    <p>Capital Atlas provides guidance and application preparation support. Funding approval depends on lender, program, jurisdiction, underwriting, and documentation requirements.</p>
+  </footer>
+  <script src="app.js" defer></script>
+</body>
+</html>
